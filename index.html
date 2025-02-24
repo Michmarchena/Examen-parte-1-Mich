@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Completeness</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="d-flex align-items-center justify-content-center vh-100 bg-white">
+    
+    <div class="container text-center" style="max-width: 1200px; width: 90%; padding: 20px;">
+        <div class="row d-flex flex-column flex-md-row align-items-start justify-content-center">
+            <form class="text-start col-md-6 mb-4 mb-md-0">
+                <div class="mb-3">
+                    <label for="fullName" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="fullName" placeholder="What should we call you?">
+                </div>
+                
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control is-invalid" id="email" value="john@doe.com">
+                    <div class="invalid-feedback">Email is already taken</div>
+                </div>
+                
+                <div class="mb-3">
+                    <label for="password" class="form-label">Enter Password</label>
+                    <div class="input-group">
+                        <input type="password" class="form-control" id="password" value="xxxxxxxx">
+                        <span class="input-group-text">
+                            <i class="bi bi-eye"></i>
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="mb-3">
+                    <label for="confirmPassword" class="form-label">Confirm Password</label>
+                    <div class="input-group">
+                        <input type="password" class="form-control" id="confirmPassword" value="xxxxxxxx">
+                        <span class="input-group-text">
+                            <i class="bi bi-eye"></i>
+                        </span>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-dark w-100 rounded-pill">Update Profile</button>
+            </form>
+
+            <div class="profile-container col-md-6 mt-4 mt-md-0 p-4 bg-light rounded shadow">
+                <div class="text-center">
+                    <img src="../img/Numero.jpeg" alt="Numero" class="img-fluid mb-4" style="width: 120px;">
+                </div>
+                <h5>Profile Completeness</h5>
+                <p class="text-muted"><s>Create Account</s></p>
+                <p class="text-muted"><s>Update Roadmap Progress</s></p>
+                <p class="text-muted"><s>Setup Public Profile</s></p>
+                <p>Complete your first project</p>
+                <p>Invite your Friends</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
